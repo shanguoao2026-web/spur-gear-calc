@@ -1,0 +1,19 @@
+{
+  "name": "spur-gear-calc",
+  "version": "1.0.0",
+  "description": "Standard involute external spur gear geometry calculator",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "spur-gear": "dist/cli.js"
+  },
+  "exports": "./dist/geometry.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test --test-isolation=none test/*.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "typescript": "5.9.3"
+  }
+}
